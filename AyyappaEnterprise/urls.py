@@ -22,6 +22,6 @@ admin.site.site_header = 'Ayyappa Enterprises'
 admin.site.index_title = 'Service Details'                
 admin.site.site_title = 'Ayyappa Enterprises'
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('', admin.site.urls),
     # path('',include("vehicleDetails.urls"))
 ]
