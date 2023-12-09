@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'vehicleDetails',
     'import_export',
-    'liststyle'
+    'liststyle',
+    'rangefilter'
 ]
 
 MIDDLEWARE = [
