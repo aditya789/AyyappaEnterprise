@@ -18,10 +18,10 @@ from django.contrib import admin
 from django.urls import path,include
 from django.contrib import admin
 
-admin.site.site_header = 'Ayyappa Enterprises, Hyderabad'                    # default: "Django Administration"
-admin.site.index_title = 'Service Details'                 # default: "Site administration"
-admin.site.site_title = 'Ayyappa Enterprises' # default: "Django site admin"
+admin.site.site_header = 'Ayyappa Enterprises'                    
+admin.site.index_title = 'Service Details'                
+admin.site.site_title = 'Ayyappa Enterprises'
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',include("vehicleDetails.urls"))
+    # path('',include("vehicleDetails.urls"))
 ]
