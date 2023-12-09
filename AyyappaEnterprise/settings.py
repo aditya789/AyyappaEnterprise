@@ -16,6 +16,7 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 TEMPLATES_DIR =  os.path.join(BASE_DIR, 'templates').replace('\\', '/')
+STATIC_ROOT = os.path.join(BASE_DIR, 'static').replace('\\', '/')
 
 
 # Quick-start development settings - unsuitable for production
@@ -40,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'vehicleDetails',
-    'bootstrap5',
-    'import_export'
+    'import_export',
+    'liststyle'
 ]
 
 MIDDLEWARE = [
