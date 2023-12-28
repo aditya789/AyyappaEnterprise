@@ -12,6 +12,7 @@ from rangefilter.filters import (
     DateRangeQuickSelectListFilterBuilder,
 )
 
+
 admin.site.unregister(Group)
 
 

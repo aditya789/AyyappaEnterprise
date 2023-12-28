@@ -8,6 +8,7 @@ django-admin-list-filter-dropdown==1.0.3
 django-admin-rangefilter==0.12.0
 -e git+https://github.com/django-import-export/django-import-export.git@a22a278dcec327084c3b8597e20e95d38e7914ef#egg=django_import_export
 django-liststyle==0.2b0
+django-truncate==0.1
 et-xmlfile==1.1.0
 gunicorn==21.2.0
 import-export==0.3.1
