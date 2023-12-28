@@ -24,8 +24,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', default='CarSpa123')
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-k!#i7%xm%t%z+nzo!mjmtd6urxi3bm4lrfrvnzg9i_)^13u5^*'
+# SECRET_KEY = 'django-insecure-k!#i7%xm%t%z+nzo!mjmtd6urxi3bm4lrfrvnzg9i_)^13u5^*'
 
+SECRET_KEY ='a7bbe7471d892d2a0f83f9395007d2ed'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'RENDER' not in os.environ
 
