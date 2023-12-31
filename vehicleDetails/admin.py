@@ -19,13 +19,19 @@ admin.site.unregister(Group)
 # # Register your models here.
 
 class VehicleDetailsAdmin(ImportExportModelAdmin, ListStyleAdminMixin, admin.ModelAdmin):
+    #  list columns data to appear
     list_display = (
         "Date",
         "Vehicle_Number",
         "Model"
     )
+    # define the fields below for searching data
     search_fields = ["Date", "Vehicle_Number", "Model"]
 
+    #  to order the data wrt date des order
+    ordering = ('-Date',)
+
+    # to show filtered data
     list_filter = (
         ("Date", DateRangeFilterBuilder()),
     )
