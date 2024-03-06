@@ -88,14 +88,24 @@ WSGI_APPLICATION = 'AyyappaEnterprise.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default='postgres://carspa_user:xQBGsmJvDe4iIyjFRZvg8PxSagXxXWYy@dpg-cm6jm7gcmk4c738p4aeg-a.oregon-postgres.render.com/carspa',
-        conn_max_age=600
-    )
-}
+# DATABASES = {
+#     'default': dj_database_url.config(
+#         # Feel free to alter this value to suit your needs.
+#         default='postgres://carspa_user:xQBGsmJvDe4iIyjFRZvg8PxSagXxXWYy@dpg-cm6jm7gcmk4c738p4aeg-a.oregon-postgres.render.com/carspa',
+#         conn_max_age=600
+#     )
+# }
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.oracle',
+        'NAME': 'myawsdb',
+        'USER': 'myawsoracledb',
+        'PASSWORD': 'myawsoracledb',
+        'HOST': 'myawsoracledb.cz24oc4oogkm.ap-south-1.rds.amazonaws.com',
+        'PORT': '1521',
+    }
+}
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
 
